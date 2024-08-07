@@ -28,17 +28,17 @@ const Navbar = () => {
                     <a href="#"><i className="fa-solid fa-bars"></i></a>
                     <a href="#"><i className="fa-solid fa-x"></i></a>
                 </section>
-                <a href="/"><img src="/src/assets/images/lotus.png" alt="lotus icon"/></a>
+                <a href="/"><img src="/src/assets/images/lotus.png" alt="lotus icon" className="icon"/></a>
             </article>
             <article className={`link_item ${isMenuOpen ? 'is-visible' : ''}`}>
                 <section>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Resume</li>
-                        <li>Work</li>
-                        <li>Conférences</li>
-                        <li>Contact</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Conférences</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </section>
                 <section>
@@ -46,6 +46,8 @@ const Navbar = () => {
                         <option value="en">{t('language.default')}</option>
                         <option value="fr">{t('language.fr')}</option>
                     </select>
+
+                    <button className="btn">Get a quote</button>
                 </section>
             </article>
 
