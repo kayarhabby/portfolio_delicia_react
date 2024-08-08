@@ -35,6 +35,7 @@ body {
   background-color : forestgreen;
   color: white;
   width: 200px;
+  padding: 10px;
 }
 
 .btn:hover{
@@ -89,7 +90,7 @@ body {
 .cercle_img{
   height: 200px;
   width: 200px;
-  background-color: #3498db;
+  background-color: forestgreen;
   border-radius: 50%;
 }
 
@@ -165,7 +166,7 @@ body {
   flex-direction: column;
   gap: 30px;
   margin-top: 30px;
-  height: 70vh;
+  height: 100vh;
 }
 
 .education_container {
@@ -185,4 +186,151 @@ body {
   padding : 20px;
 }
 
-/*#####################################"Skills"*/
+/*#####################################"footer"*/
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: auto;
+  background-color : #212429;
+  color: white;
+}
+
+.footer_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin : 0;
+  padding: 20px;
+}
+
+.footer_content ul{
+  padding : 0;
+  margin: 0;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 42px;
+  color: white;
+}
+.name .icon_container{
+  display: flex;
+  column-gap: 20px;
+}
+
+.name .icon_container img{
+  width : 50px;
+  height : 50px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.links h3{
+  margin: 0;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.links ul li {
+  margin : 0;
+}
+
+.links ul li a:hover {
+  color : forestgreen;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact h3{
+  margin: 0;
+}
+
+.contact ul{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.contact ul li{
+  margin : 0;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.contact ul li div.cercle_img{
+  width : 50px;
+  height : 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin : 0;
+}
+
+.contact ul li img{
+  width : 30px;
+  height : 30px;
+}
+
+.contact ul li:first-child img{
+  width : 50px;
+  height : 50px;
+}
+
+.contact ul li a{
+  margin : 0;
+}
+
+.contact ul li a:hover {
+  color : forestgreen;
+}
+
+.mailMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding : 0;
+  column-gap: 5px;
+}
+
+.footer_container a{
+  color: white;
+}
+
+.footer_container section:not(.footer_content){
+  border-top : 1px solid #718096;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding : 10px;
+}
+
+.mailMe button{
+  display: flex;
+  align-items: center;
+  padding : 5px;
+  width : 171px;
+}
+
+/*#####################################"skills"*/
