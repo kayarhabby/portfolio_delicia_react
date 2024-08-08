@@ -158,3 +158,31 @@ body {
 }
 
 /*#####################################"Education"*/
+
+.education{
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  height: 70vh;
+}
+
+.education_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.education_content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education_content article {
+  border : 1px solid #718096;
+  padding : 20px;
+}
+
+/*#####################################"Skills"*/
