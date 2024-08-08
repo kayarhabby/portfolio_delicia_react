@@ -346,6 +346,7 @@ body {
 }
 
 .quote-item {
+  max-width: 1280px;
   position: relative;
   margin-bottom: 20px;
 }
