@@ -34,9 +34,10 @@ const Quotes = () => {
             {/* Render the quotes if they exist */}
             {quotes.length > 0 ? (
                 quotes.map((quote, index) => (
-                    <div key={index} className="quote">
-                        <p>{quote.quote}</p>
-                        <p><em>- {quote.author}</em></p>
+                    <div key={index} className="quote-item">
+                        <i className="fas fa-quote-left quote-icon"></i> {/* Guillemets stylisés */}
+                        <p className="quote-text">{quote.quote}</p>
+                        <p className="quote-author"><em>- {quote.author}</em></p>
                     </div>
                 ))
             ) : (
