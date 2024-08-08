@@ -45,8 +45,6 @@ const Navbar = () => {
                         <option value="en">{t('language.default')}</option>
                         <option value="fr">{t('language.fr')}</option>
                     </select>
-
-                    <button className="btn">Get a quote</button>
                 </section>
             </article>
         </nav>
