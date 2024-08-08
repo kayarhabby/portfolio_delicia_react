@@ -46,6 +46,35 @@ body {
   flex-direction: column;
 }
 
-/*#####################################""*/
+/*#####################################"header"*/
 
+.header__container {
+  background-image: url("/src/assets/images/slider_header.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+}
 
+.header__article_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__article_content p {
+  color : white;
+  font-size: 32px;
+}
+
+.cercle_img{
+  height: 200px;
+  width: 200px;
+  background-color: #3498db;
+  border-radius: 50%;
+}
+
+/*#####################################"about"*/
