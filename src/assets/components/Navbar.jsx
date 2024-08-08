@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import i18n from '../js/i18n';
 import '../css/Navbar.css';
@@ -33,12 +32,12 @@ const Navbar = () => {
             <article className={`link_item ${isMenuOpen ? 'is-visible' : ''}`}>
                 <section>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Conférences</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#conferences">Conférences</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </section>
                 <section>
