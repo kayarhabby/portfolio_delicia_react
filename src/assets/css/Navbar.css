@@ -48,17 +48,6 @@ nav > article {
     display: none;
 }
 
-.btn{
-    background-color : forestgreen;
-    color: white;
-    width: 200px;
-}
-
-.btn:hover{
-    background-color: darkgreen;
-    color: white;
-}
-
 /* Mobile Styles */
 @media only screen and (max-width: 767px) {
     nav {
