@@ -53,11 +53,4 @@ const Navbar = () => {
         </nav>
     );
 };
-
-{/*<div className="d-flex align-items-center justify-content-center">*/}
-{/*    <span className="line"></span>*/}
-{/*    <i className="icon flaticon-lotus"></i>*/}
-{/*    <span className="line"></span>*/}
-{/*</div>*/}
-
 export default Navbar;
