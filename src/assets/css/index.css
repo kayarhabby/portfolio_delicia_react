@@ -345,9 +345,27 @@ body {
   padding: 20px;
 }
 
-.quote{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.quote-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.quote-icon {
+  color: #4caf50; /* Couleur du guillemet */
+  font-size: 24px; /* Taille du guillemet */
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.quote-text {
+  font-size: 18px;
+  margin-left: 40px; /* Décalage pour que le texte ne chevauche pas le guillemet */
+}
+
+.quote-author {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #888;
 }
