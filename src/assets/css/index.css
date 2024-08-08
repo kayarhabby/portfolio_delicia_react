@@ -13,8 +13,8 @@
 * {
   padding: 0;
   margin: 0;
-  /*box-sizing: border-box;*/
-  /*margin-inline: auto;*/
+  box-sizing: border-box;
+  margin-inline: auto;
 }
 
 a {
@@ -31,6 +31,17 @@ body {
   width: 100%;
 }
 
+.btn{
+  background-color : forestgreen;
+  color: white;
+  width: 200px;
+}
+
+.btn:hover{
+  background-color: darkgreen;
+  color: white;
+}
+
 .line {
   display: inline-block;
   width: 50px; /* La largeur des barres horizontales */
@@ -44,6 +55,11 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.content_title_icon > div {
+  display: flex;
+  align-items: center;
 }
 
 /*#####################################"header"*/
@@ -78,3 +94,67 @@ body {
 }
 
 /*#####################################"about"*/
+
+.about{
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  height: 70vh;
+}
+.about_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap : 70px;
+}
+
+.about_container img{
+  width: 100%;
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 10%;
+}
+
+.about_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap : 20px;
+}
+
+.about_content p {
+  text-align: justify;
+}
+
+.about_content p span.span_b {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.icon img{
+  width: 20px;
+  height: 20px;
+  margin : 0;
+}
+
+.about_content button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding : 0;
+  column-gap: 5px;
+}
+
+/*#####################################"Education"*/
