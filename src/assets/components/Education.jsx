@@ -1,9 +1,9 @@
 import React from 'react';
 import Title from "./Title.jsx";
 
-const Resume = () => {
+const Education = () => {
     return (
-        <div id="resume" className="resume">
+        <div id="education" className="education">
             <Title title="Education"/>
             <div className="education_container">
                 <div className="education_content">
@@ -45,4 +45,4 @@ const Resume = () => {
     );
 };
 
-export default Resume;
+export default Education;
