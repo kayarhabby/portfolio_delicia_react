@@ -6,6 +6,7 @@ import Education from "./assets/components/Education.jsx";
 import Footer from "./assets/components/Footer.jsx";
 import Quotes from "./assets/components/Quotes.jsx";
 import Competences from "./assets/components/Competences.jsx";
+import Experience from "./assets/components/Experience.jsx";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Education />
       <Competences />
+      <Experience />
       {/*<Quotes />*/}
       <Footer />
     </div>
