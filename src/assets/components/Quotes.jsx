@@ -30,7 +30,7 @@ const Quotes = () => {
 
     return (
         <div className="quotes">
-            <Title title="Quotes on Happiness" />
+            <Title title="Quotes on Education" />
             {/* Render the quotes if they exist */}
             {quotes.length > 0 ? (
                 quotes.map((quote, index) => (
