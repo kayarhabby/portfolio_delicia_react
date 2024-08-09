@@ -66,13 +66,25 @@ body {
 /*#####################################"header"*/
 
 .header__container {
-  background-image: url("/src/assets/images/slider_header.jpg");
+  background-image: url("/src/assets/images/laboratory.jpg");
   background-size: cover;
+  position: relative; /* Permet d'ajouter un overlay avec ::before */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 70vh;
+}
+
+.header__container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay noir semi-transparent */
+  z-index: 1; /* Place l'overlay sous le contenu */
 }
 
 .header__article_content {
@@ -80,29 +92,43 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  z-index: 2; /* Assure que le contenu est au-dessus de l'overlay */
 }
 
 .header__article_content p {
-  color : white;
+  color: white; /* Texte blanc pour contraste */
   font-size: 32px;
 }
 
-.cercle_img{
+.cercle_img {
   height: 200px;
   width: 200px;
   background-color: forestgreen;
   border-radius: 50%;
+  position: relative;
+  z-index: 2; /* Assure que l'image est au-dessus de l'overlay */
+}
+
+.header__container button{
+  z-index: 2; /* Assure que le contenu est au-dessus de l'overlay */
 }
 
 /*#####################################"about"*/
-
+#about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
 .about{
   max-width: 1280px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-top: 30px;
-  height: 70vh;
+
 }
 .about_container {
   display: grid;
@@ -258,6 +284,8 @@ body {
 .footer_container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
   height: auto;
   background-color : #212429;
@@ -269,6 +297,8 @@ body {
   grid-template-columns: repeat(4, 1fr);
   margin : 0;
   padding: 20px;
+  max-width: 1280px;
+  gap : 30px;
 }
 
 .footer_content ul{
@@ -282,6 +312,7 @@ body {
   flex-direction: column;
   font-size: 42px;
   color: white;
+  margin-right: 50px;
 }
 .name .icon_container{
   display: flex;
@@ -403,40 +434,76 @@ body {
 /*#####################################"Quotes"*/
 
 .quotes {
-  background-image: url("/src/assets/images/bg4.jpg");
+  background-image: url("/src/assets/images/library.jpg");
+  background-size: cover; /* Assure que l'image de fond couvre tout le conteneur */
+  position: relative; /* Pour permettre l'ajout d'un overlay avec ::before */
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centre les éléments horizontalement */
+  justify-content: center; /* Centre les éléments verticalement */
   width: 100%;
-  height: 30vh;
-  row-gap: 20px;
+  min-height: 50vh; /* Assure que le conteneur a une hauteur minimale de 100vh */
   padding: 20px;
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+  text-align: center; /* Centre le texte à l'intérieur des éléments */
+  margin-bottom: 30px;
+}
+
+.quotes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay sombre semi-transparent */
+  z-index: 1; /* Place l'overlay sous le contenu */
 }
 
 .quote-item {
-  max-width: 1280px;
+  max-width: 1280px; /* Limite la largeur maximale des éléments de citation */
+  margin: 20px 0; /* Marge verticale pour espacer les citations */
   position: relative;
-  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Fond légèrement transparent pour mieux voir le texte */
+  border-radius: 10px; /* Bords arrondis pour les citations */
+  z-index: 2; /* Assure que le contenu est au-dessus de l'overlay */
+}
+
+.quotes .content_title_icon h1 {
+  color: white; /* Titre en blanc pour un meilleur contraste */
+  position: relative;
+  z-index: 2; /* Place le titre au-dessus de l'overlay */
+}
+.quotes .content_title_icon{
+  z-index: 2; /* Place le titre au-dessus de l'overlay */
 }
 
 .quote-icon {
-  color: #4caf50; /* Couleur du guillemet */
-  font-size: 24px; /* Taille du guillemet */
+  color: #4caf50;
+  font-size: 24px;
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: 10px;
+  left: 10px;
+  z-index: 2; /* Assure que l'icône est au-dessus de l'overlay */
 }
 
 .quote-text {
   font-size: 18px;
-  margin-left: 40px; /* Décalage pour que le texte ne chevauche pas le guillemet */
+  margin-left: 40px; /* Décalage pour l'icône de citation */
+  position: relative;
+  z-index: 2; /* Assure que le texte est au-dessus de l'overlay */
 }
 
 .quote-author {
-  text-align: center;
   font-size: 16px;
-  margin-top: 10px;
   color: #888;
+  margin-top: 10px;
+  position: relative;
+  z-index: 2; /* Assure que le texte de l'auteur est au-dessus de l'overlay */
 }
+
+
 
 /*#####################################"Competences"*/
 
@@ -512,6 +579,10 @@ body {
   padding : 10px;
 }
 
+.experience_items:hover {
+  border : 1px solid lightseagreen;
+}
+
 .experience_items h3 {
   font-size: 24px;
 }
@@ -530,3 +601,72 @@ body {
 .experience_icon_title h2{
   margin : 0;
 }
+
+/*#####################################"Gallerie"*/
+.gallerie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.gallerie_container {
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour la grille */
+  gap: 10px; /* Espacement entre les images */
+}
+
+.gallerie_content {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallerie_content:nth-child(1) {
+  grid-column: span 2; /* Prend 2 colonnes */
+}
+
+.gallerie_content:nth-child(2),
+.gallerie_content:nth-child(3),
+.gallerie_content:nth-child(4),
+.gallerie_content:nth-child(5) {
+  grid-column: span 1; /* Prend 1 colonne */
+}
+
+.gallerie_content:nth-last-child(1) {
+  grid-column: span 2; /* Le dernier enfant prend aussi 2 colonnes */
+}
+
+.gallerie_items_img {
+  width: 100%; /* Remplit la largeur du conteneur */
+  height: 100%; /* Remplit la hauteur du conteneur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallerie_items_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Assure que l'image couvre tout le conteneur sans déformation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'effet de zoom et l'ombre */
+}
+
+.gallerie_items_img:hover img {
+  transform: scale(1.1); /* Zoom sur l'image */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Ombre portée pour l'effet de flottement */
+}
+
+.gallerie_items_img h4 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+
