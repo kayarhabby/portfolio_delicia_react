@@ -4,9 +4,7 @@ const DownloadButton = (props) => {
     return (
         <a href={props.downloadUrl} target="_blank" download>
             <button className="btn">
-                <div className="icon">
-                    <img src={props.src} alt={props.alt} />
-                </div>
+                <i className="fa-solid fa-download"></i>
                 {props.text}
             </button>
         </a>
