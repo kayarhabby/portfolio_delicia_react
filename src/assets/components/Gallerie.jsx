@@ -1,17 +1,21 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Title from "./Title.jsx";
 import "../css/Gallerie.css";
 
 const Gallerie = () => {
+    const { t } = useTranslation('gallerie');
+
     const images = [
-        { src: "/src/assets/images/techno.jpg", alt: "techno", title: "Conferences" },
-        { src: "/src/assets/images/nature_fleur.jpg", alt: "nature_fleur", title: "Conferences" },
-        { src: "/src/assets/images/nature_fleur.jpg", alt: "nature_fleur", title: "Conferences" },
-        { src: "/src/assets/images/nature_fleur.jpg", alt: "nature_fleur", title: "Conferences" }
+        { src: "/src/assets/images/techno.jpg", alt: t('gallerie.image1'), title: t('gallerie.image1') },
+        { src: "/src/assets/images/nature_fleur.jpg", alt: t('gallerie.image2'), title: t('gallerie.image2') },
+        { src: "/src/assets/images/nature_fleur.jpg", alt: t('gallerie.image3'), title: t('gallerie.image3') },
+        { src: "/src/assets/images/nature_fleur.jpg", alt: t('gallerie.image4'), title: t('gallerie.image4') }
     ];
+
     return (
         <div id='gallerie' className='gallerie'>
-            <Title title="Gallerie" />
+            <Title title={t('gallerie.title')} />
             <section className='gallerie_container'>
                 {images.map((image, index) => (
                     <article className="gallerie_content" key={index}>
