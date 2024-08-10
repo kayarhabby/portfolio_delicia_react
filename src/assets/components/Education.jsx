@@ -34,7 +34,7 @@ const Education = () => {
                             <h3>{item.title}</h3>
                             <small>{item.description}</small>
                             <div className="readmoreContainer">
-                                <a href="#">CERTIFICAT</a>
+                                <a href={item.link} target="_blank">CERTIFICAT</a>
                                 <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
