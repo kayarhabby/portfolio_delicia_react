@@ -1,6 +1,8 @@
 {
   "experience": {
     "title" : "Experience",
+    "subtitle" : "Internships",
+    "subtitle2" : "Professional Experience",
     "stages": [
       {
         "title": "Intern at Médecins d'Afrique NGO",
