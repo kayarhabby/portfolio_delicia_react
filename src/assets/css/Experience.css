@@ -50,6 +50,10 @@
     margin: 0;
 }
 
+.experience_icon_title i {
+    color: var(--highlight-color);
+}
+
 /* Pour les écrans de 768px de large ou moins */
 @media (max-width: 768px) {
 
