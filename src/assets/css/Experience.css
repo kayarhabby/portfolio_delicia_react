@@ -1,4 +1,12 @@
 /* Section "Expérience" */
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-large);
+}
+
 .experience {
     display: flex;
     flex-direction: column;
@@ -7,24 +15,29 @@
     gap: var(--gap-large);
     margin-top: var(--gap-large);
     margin-bottom: var(--gap-large);
+    max-width: var(--max-width);
 }
 
 .experience_container {
-    max-width: var(--max-width);
     display: flex;
     gap: var(--gap-large);
 }
 
 .experience_content {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--gap-large);
-    width: 100%;
 }
 
 .experience_items {
     border: 1px solid var(--border-color);
     padding: var(--gap-small);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+    min-height: 20vh; /* Hauteur minimale pour garantir une taille de boîte correcte */
+    height: auto; /* Hauteur auto pour s'ajuster au contenu */
+    box-sizing: border-box; /* Inclure les bordures et le padding dans les dimensions de l'élément */
 }
 
 .experience_items:hover {
@@ -32,11 +45,17 @@
 }
 
 .experience_items h3 {
-    font-size: var(--font-size-medium);
+    font-size: 1rem;
 }
 
 .experience_items h4 {
     font-size: var(--font-size-small);
+}
+
+.experience_items h3, .experience_items h4 {
+    margin: 0; /* Supprimer les marges pour éviter les débordements */
+    padding: 0;
+    flex-shrink: 0; /* Empêche les éléments de rétrécir s'il y a trop de contenu */
 }
 
 .experience_icon_title {
@@ -44,6 +63,12 @@
     align-items: center;
     column-gap: var(--gap-medium);
     margin-bottom: var(--gap-small);
+    flex-shrink: 0;
+}
+
+.experience_items .content {
+    flex-grow: 1; /* Prend tout l'espace restant disponible dans la boîte */
+    margin-top: var(--gap-small);
 }
 
 .experience_icon_title h2 {
