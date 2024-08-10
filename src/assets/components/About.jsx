@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Title from "./Title.jsx";
 import "../css/About.css";
+import Button from "./DownloadButton.jsx";
 
 const About = () => {
     const { t } = useTranslation('about');
@@ -15,12 +16,12 @@ const About = () => {
                     <article className='about_content'>
                         <p>{t('about.introduction')}</p>
                         <p>{t('about.goal')}</p>
-                        <button className="btn">
-                            <div className="icon">
-                                <img src="/src/assets/images/download-to-storage-drive.png" alt="Download to storage drive" />
-                            </div>
-                            {t('about.downloadCV')}
-                        </button>
+                        <Button
+                            downloadUrl="/src/assets/documents/certifications/2024-05-26_agir-pour-sa-sante-universite-de-liege-badge-de-reussite-fr.pdf"
+                            src="/src/assets/images/download-to-storage-drive.png"
+                            alt="Download to storage drive"
+                            text ={t('about.downloadCV')}
+                        />
                     </article>
                 </section>
             </article>
