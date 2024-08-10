@@ -4,14 +4,18 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: var(--gap-small); /* Espacement en haut */
+    margin-bottom: var(--gap-small); /* Espacement en bas */
+    position: sticky; /* Rendre sticky */
+    top: 0; /* Coller en haut */
+    background-color: var(--white); /* Ajoutez une couleur de fond pour le contraste */
+    z-index: 1000; /* Assurez-vous que la barre de navigation est au-dessus du contenu */
 }
 
 nav {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid var(--border-color); /* Utilisation de la couleur de bordure */
     padding: 0;
-    margin-top: var(--gap-small); /* Espacement en haut */
     max-width: var(--content-max-width); /* Largeur maximale du contenu */
 }
 
@@ -44,16 +48,29 @@ nav > article {
     font-size: var(--font-size-medium); /* Taille de police pour les liens */
     padding: var(--gap-small) 0; /* Padding vertical */
     display: block;
+    position: relative; /* Pour la barre en bas */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transition pour l'animation */
 }
 
-.link_item section:nth-child(2) {
-    display: flex;
-    gap: var(--gap-medium); /* Espacement entre les éléments de la section */
+.link_item ul li a.active {
+    color: var(--highlight-color); /* Couleur du texte pour le lien actif */
+}
+
+.link_item ul li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Hauteur de la barre */
+    background-color: var(--highlight-color); /* Couleur de la barre */
+    transition: width 0.3s ease; /* Transition pour l'animation */
 }
 
 .menu-hamburger {
     display: none;
 }
+
 
 /* Mobile Styles */
 @media only screen and (max-width: 767px) {
@@ -61,8 +78,17 @@ nav > article {
         flex-direction: column;
     }
 
+    nav > article:first-child {
+        display: flex;
+        justify-content: space-between;
+    }
+
     nav section {
         margin: 0;
+    }
+    .navbar_container nav > article .icon {
+        width: 30px;
+        height: 30px;
     }
 
     nav article section > ul {
