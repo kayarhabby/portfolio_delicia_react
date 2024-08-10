@@ -1,10 +1,12 @@
-/* Section "ABout" */
+/* Section "About" */
 #about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: auto; /* Ajuste la hauteur pour le contenu dynamique */
+    padding: var(--gap-large) 0; /* Ajout d'un padding pour le positionnement */
+    margin-top: var(--gap-large); /* Marge au-dessus */
 }
 
 .about {
@@ -12,7 +14,6 @@
     display: flex;
     flex-direction: column;
     gap: var(--gap-large); /* Espacement entre les éléments */
-    margin-top: var(--gap-large); /* Marge au-dessus */
 }
 
 .about_container {
@@ -66,4 +67,11 @@
     align-items: center;
     padding: 0;
     column-gap: var(--gap-small); /* Espacement entre les éléments du bouton */
+}
+
+/* Pour les écrans de 768px de large ou moins */
+@media (max-width: 768px) {
+    .about_container {
+        grid-template-columns: 1fr; /* Passer à une seule colonne */
+    }
 }
