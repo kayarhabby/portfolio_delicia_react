@@ -19,6 +19,8 @@ import enCompetences from '../translations/en/competences.json';
 import frCompetences from '../translations/fr/competences.json';
 import enGallerie from '../translations/en/gallerie.json';
 import frGallerie from '../translations/fr/gallerie.json';
+import enContact from '../translations/en/contact.json';
+import frContact from '../translations/fr/contact.json';
 // Configuration de i18next
 i18n
     .use(initReactI18next)
@@ -32,7 +34,8 @@ i18n
                 competences: enCompetences,
                 experience: enExperience,
                 footer: enFooter,
-                gallerie: enGallerie
+                gallerie: enGallerie,
+                contact: enContact
             },
             fr: {
                 navbar: frNavbar,
@@ -42,13 +45,14 @@ i18n
                 competences: frCompetences,
                 experience: frExperience,
                 footer: frFooter,
-                gallerie: frGallerie
+                gallerie: frGallerie,
+                contact: frContact
 
             }
         },
         lng: 'fr', // Langue par défaut
         fallbackLng: 'fr', // Langue de repli en cas de non disponibilité
-        ns: ['navbar','header','about','education','competences','experience','footer','gallerie'], // Noms des namespaces
+        ns: ['navbar','header','about','education','competences','experience','footer','gallerie', 'contact'], // Noms des namespaces
         defaultNS: 'navbar', // Namespace par défaut
         interpolation: {
             escapeValue: false, // Pas nécessaire pour React
