@@ -1,14 +1,16 @@
 import React from 'react';
 
-const Button = (props) => {
+const DownloadButton = (props) => {
     return (
-        <button className="btn">
-            <div className="icon">
-                <img src={props.src} alt={props.alt}/>
-            </div>
-            {props.text}
-        </button>
-);
+        <a href={props.downloadUrl} target="_blank" download>
+            <button className="btn">
+                <div className="icon">
+                    <img src={props.src} alt={props.alt} />
+                </div>
+                {props.text}
+            </button>
+        </a>
+    );
 };
 
-export default Button;
+export default DownloadButton;
