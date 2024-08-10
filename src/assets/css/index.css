@@ -44,7 +44,7 @@
   --btn-hover-bg-color: darkgreen;
 
   /* Largeurs maximales */
-  --max-width: 1560px;
+  --max-width: 1280px;
   --content-max-width: 1280px;
 
   /* Effets */
@@ -96,80 +96,4 @@ body {
 
 .btn:hover {
   background-color: var(--btn-hover-bg-color);
-}
-
-/* Media Queries pour adapter le site à différentes tailles d'écran */
-/* Pour les écrans de 1024px de large ou moins */
-@media (max-width: 1024px) {
-  /* Section "About" : Passer d'une grille à deux colonnes à une seule colonne */
-  .about_container {
-    grid-template-columns: 1fr;
-  }
-
-  /* Section "Compétences" : Passer d'une grille à trois colonnes à deux colonnes */
-  .competences_container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Section "Éducation" : Passer d'une grille à trois colonnes à deux colonnes */
-  .education_container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Section "Expérience" : Passer d'une disposition en ligne à une disposition en colonne */
-  .experience_container {
-    flex-direction: column;
-  }
-
-  /* Ajustement du nom dans le pied de page pour qu'il soit centré */
-  .name {
-    text-align: center;
-    margin-right: 0;
-  }
-}
-
-/* Pour les écrans de 768px de large ou moins */
-@media (max-width: 768px) {
-  /* Section "Compétences" : Passer d'une grille à deux colonnes à une seule colonne */
-  .competences_container, .education_container, .footer_content {
-    grid-template-columns: 1fr;
-  }
-
-  /* Réduction de la taille de la police pour les titres d'expérience */
-  .experience_items h3 {
-    font-size: var(--font-size-large);
-  }
-
-  /* Passer l'affichage de l'icône et du titre d'expérience en colonne */
-  .experience_icon_title {
-    flex-direction: column;
-  }
-}
-
-/* Pour les écrans de 576px de large ou moins */
-@media (max-width: 576px) {
-  /* Réduction de la taille de la police pour les spans dans la section "About" */
-  .about_content p span.span_b {
-    font-size: var(--font-size-xlarge);
-  }
-
-  /* Section "Compétences" : Passer d'une grille à une colonne */
-  .competences_container {
-    grid-template-columns: 1fr;
-  }
-
-  /* Réduction de la taille de la police pour les titres d'expérience */
-  .experience_items h3 {
-    font-size: var(--font-size-medium);
-  }
-
-  /* Passer le pied de page en une seule colonne */
-  .footer_content {
-    grid-template-columns: 1fr;
-  }
-
-  /* Réduction de la taille de la police pour le nom */
-  .name {
-    font-size: var(--font-size-large);
-  }
 }
