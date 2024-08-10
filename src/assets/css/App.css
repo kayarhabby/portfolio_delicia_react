@@ -3,10 +3,14 @@
 }
 /* Pour les écrans de 768px de large ou moins */
 @media (max-width: 768px) {
-  margin: 0 16px 0 16px;
+  #root {
+    margin: 0 16px 0 16px;
+  }
 }
 
 /* Pour les écrans entre 768px et 1024px de large */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  margin: 0 16px 0 16px;
+  #root {
+    margin: 0 16px 0 16px;
+  }
 }
