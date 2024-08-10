@@ -1,0 +1,43 @@
+{
+  "education": {
+    "title": "Éducation",
+    "items": [
+      {
+        "imgSrc": "/src/assets/images/nature_fleur.jpg",
+        "date": "12 Jan, 2024",
+        "title": "Licence en Sciences de la Santé avec spécialisation en Santé Publique",
+        "description": "Études universitaires à la Faculté des Sciences de la Santé, diplôme obtenu : Licence en Sciences de la Santé avec spécialisation en Santé Publique."
+      },
+      {
+        "imgSrc": "/src/assets/images/techno.jpg",
+        "date": "12 Jan, 2024",
+        "title": "Baccalauréat Scientifique",
+        "description": "Éducation secondaire, diplôme obtenu : Baccalauréat série C, mention assez-bien au Lycée de la Réconciliation, Brazzaville."
+      },
+      {
+        "imgSrc": "/src/assets/images/techno.jpg",
+        "date": "Avril 2024",
+        "title": "MLM",
+        "description": "Obtention d'une certification master de la formation des cadres de niveau intermédiaire (MLM)."
+      },
+      {
+        "imgSrc": "/src/assets/images/techno.jpg",
+        "date": "Novembre 2023",
+        "title": "MOOC",
+        "description": "Agir pour sa santé."
+      },
+      {
+        "imgSrc": "/src/assets/images/techno.jpg",
+        "date": "Octobre 2023",
+        "title": "MOOC",
+        "description": "Rédiger et publier un article scientifique."
+      },
+      {
+        "imgSrc": "/src/assets/images/techno.jpg",
+        "date": "Avril 2023",
+        "title": "MOOC",
+        "description": "Badge de réussite du MOOC sur la santé environnementale."
+      }
+    ]
+  }
+}
