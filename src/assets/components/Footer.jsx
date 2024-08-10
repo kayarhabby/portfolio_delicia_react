@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import "../css/Footer.css";
+import DownloadButton from "./DownloadButton.jsx";
 
 const Footer = () => {
     const { t } = useTranslation('footer');
@@ -58,28 +59,24 @@ const Footer = () => {
                             </div>
                             <a href={`mailto:${t('footer.contact.email')}`}>{t('footer.contact.email')}</a>
                         </li>
-                        <li>
-                            <div className="cercle_img">
-                                <img src="/src/assets/images/globe.png" alt="globe"/>
-                            </div>
-                            <a href="#">{t('footer.contact.website')}</a>
-                        </li>
                     </ul>
-                    <button className="btn">
-                        <div className="icon">
-                            <img src="/src/assets/images/download-to-storage-drive.png" alt="download to storage drive"/>
-                        </div>
-                        {t('footer.downloadCV')}
-                    </button>
+                    <DownloadButton
+                        downloadUrl="/src/assets/documents/certifications/2024-05-26_agir-pour-sa-sante-universite-de-liege-badge-de-reussite-fr.pdf"
+                        src="/src/assets/images/download-to-storage-drive.png"
+                        alt="Download to storage drive"
+                        text ={t('footer.downloadCV')}
+                    />
                 </div>
 
                 <div className="mailMe">
-                    <button className="btn">
-                        {t('footer.mailMe')}
-                        <div className="icon">
-                            <img src="/src/assets/images/paper-plane.png" alt="paper plane"/>
-                        </div>
-                    </button>
+                    <a href={`mailto:${t('footer.contact.email')}`}>
+                        <button className="btn">
+                            {t('footer.mailMe')}
+                            <div className="icon">
+                                <img src="/src/assets/images/paper-plane.png" alt="paper plane"/>
+                            </div>
+                        </button>
+                    </a>
                 </div>
             </section>
             <section>
