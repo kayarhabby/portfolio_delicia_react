@@ -1,0 +1,69 @@
+/* Section "ABout" */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.about {
+    max-width: var(--content-max-width); /* Largeur maximale du contenu */
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-large); /* Espacement entre les éléments */
+    margin-top: var(--gap-large); /* Marge au-dessus */
+}
+
+.about_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-xlarge); /* Espacement entre les colonnes */
+}
+
+.about_container img {
+    width: 100%;
+    border-bottom-right-radius: var(--border-radius-large); /* Rayon de bordure */
+    border-top-left-radius: var(--border-radius-large); /* Rayon de bordure */
+}
+
+.about_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap-medium); /* Espacement entre les éléments */
+}
+
+.about_content p {
+    text-align: justify;
+}
+
+.about_content p span.span_b {
+    font-family: "Dancing Script", cursive;
+    font-size: var(--font-size-xlarge); /* Taille de police */
+    font-weight: 400;
+    font-style: normal;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--icon-size-medium); /* Taille des icônes */
+    height: var(--icon-size-medium);
+    margin: 0;
+}
+
+.icon img {
+    width: var(--icon-size-small); /* Taille des icônes */
+    height: var(--icon-size-small);
+    margin: 0;
+}
+
+.about_content button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    column-gap: var(--gap-small); /* Espacement entre les éléments du bouton */
+}

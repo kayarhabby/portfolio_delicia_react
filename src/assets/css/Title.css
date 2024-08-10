@@ -1,0 +1,19 @@
+.line {
+    display: inline-block;
+    width: 50px; /* La largeur des barres horizontales */
+    height: 2px; /* La hauteur des barres horizontales */
+    background-color: forestgreen; /* La couleur des barres horizontales */
+    margin: 0 10px; /* L'espace entre les barres et l'image */
+}
+
+.content_title_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content_title_text {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,78 @@
+/* Section "Éducation" */
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+    margin-bottom: var(--gap-large);
+}
+
+.education_container {
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap-large);
+}
+
+.education_item_img {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.education_item_img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.education_item_img:hover img {
+    transform: scale(1.1);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.education_content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+    text-align: justify;
+}
+
+.education_items_date {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-small);
+}
+
+.education_items_text {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-small);
+}
+
+.education_items_text h3 {
+    font-size: var(--font-size-medium);
+    margin: 0;
+}
+
+.education_items_text h3:hover {
+    color: var(--hover-border-color);
+}
+
+.readmoreContainer {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap-small);
+}
+
+.readmoreContainer a {
+    margin: 0;
+    color: var(--hover-border-color);
+}
+
+.readmoreContainer:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+/* Section "Compétences" */
+.competences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: var(--gap-large);
+}
+
+.competences_container {
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap-large);
+}
+
+.competences_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+    border: 1px solid var(--border-color);
+    padding: var(--gap-medium);
+}
+
+.competences_items h3, p {
+    margin: 0;
+    text-align: justify;
+}
+
+.competences_items h3 {
+    font-size: var(--font-size-medium);
+}
+
+.competences_items:hover {
+    background-color: var(--hover-border-color);
+    color: var(--white);
+}

@@ -1,27 +1,32 @@
 /* Base Styles */
+.navbar_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 nav {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid #718096;
+    border-bottom: 1px solid var(--border-color); /* Utilisation de la couleur de bordure */
     padding: 0;
-    margin-top : 16px;
-    max-width: 1280px;
+    margin-top: var(--gap-small); /* Espacement en haut */
+    max-width: var(--content-max-width); /* Largeur maximale du contenu */
 }
 
 nav > article {
     margin: 0;
-
 }
 
-.icon{
+.navbar_container nav > article .icon {
     width: 44px;
     height: 44px;
 }
 
-.link_item{
+.link_item {
     display: flex;
-    justify-content : space-between;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
@@ -32,18 +37,18 @@ nav > article {
 
 .link_item section > ul {
     display: flex;
-    gap: 32px;
+    gap: var(--gap-medium); /* Espacement entre les éléments de la liste */
 }
 
 .link_item ul li a {
-    font-size: 1rem;
-    padding: 12px 0;
+    font-size: var(--font-size-medium); /* Taille de police pour les liens */
+    padding: var(--gap-small) 0; /* Padding vertical */
     display: block;
 }
 
 .link_item section:nth-child(2) {
     display: flex;
-    gap: 32px;
+    gap: var(--gap-medium); /* Espacement entre les éléments de la section */
 }
 
 .menu-hamburger {
@@ -62,18 +67,17 @@ nav > article {
 
     nav article section > ul {
         flex-direction: column;
-        gap: 20px;
+        gap: var(--gap-medium); /* Espacement entre les éléments de la liste */
         padding-left: 0;
-        margin: 10px 0;
+        margin: var(--gap-small) 0; /* Espacement vertical */
         width: 100%;
     }
 
     nav section > ul li {
         margin: 0;
-        border-top: 1px solid #718096;
+        border-top: 1px solid var(--border-color); /* Bordure supérieure */
         width: 100%;
     }
-
 
     .menu-hamburger {
         display: block;
@@ -82,8 +86,8 @@ nav > article {
 
     .menu-hamburger a {
         display: inline-block;
-        font-size: 1.5rem;
-        margin-left: 10px;
+        font-size: var(--font-size-large); /* Taille de police pour l'icône du menu */
+        margin-left: var(--gap-small); /* Marge à gauche */
     }
 
     .menu-hamburger .fa-x {

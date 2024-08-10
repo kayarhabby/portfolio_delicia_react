@@ -1,0 +1,51 @@
+/* Section "Expérience" */
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-large);
+    margin-top: var(--gap-large);
+    margin-bottom: var(--gap-large);
+}
+
+.experience_container {
+    max-width: var(--max-width);
+    display: flex;
+    gap: var(--gap-large);
+}
+
+.experience_content {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: var(--gap-large);
+    width: 100%;
+}
+
+.experience_items {
+    border: 1px solid var(--border-color);
+    padding: var(--gap-small);
+}
+
+.experience_items:hover {
+    border: 1px solid var(--hover-border-color);
+}
+
+.experience_items h3 {
+    font-size: var(--font-size-medium);
+}
+
+.experience_items h4 {
+    font-size: var(--font-size-small);
+}
+
+.experience_icon_title {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap-medium);
+    margin-bottom: var(--gap-small);
+}
+
+.experience_icon_title h2 {
+    margin: 0;
+}
