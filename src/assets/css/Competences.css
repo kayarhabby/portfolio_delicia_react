@@ -40,7 +40,7 @@
 }
 
 /* Pour les écrans de 768px de large ou moins */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     /* Section "Compétences" : Passer d'une grille à deux colonnes à une seule colonne */
     .competences_container {
@@ -58,5 +58,9 @@
     /* Section "Compétences" : Passer d'une grille à trois colonnes à deux colonnes */
     .competences_container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .competences {
+        margin-right: var(--gap-small);
+        margin-left: var(--gap-small);
     }
 }

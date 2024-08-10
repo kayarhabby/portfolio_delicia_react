@@ -43,9 +43,37 @@
     color: var(--highlight-color);
 }
 
+.contact-info section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-medium);
+}
+
 /* Pour les écrans de 768px de large ou moins */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .contact-container {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Pour les écrans entre 768px et 1024px de large */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-info section {
+        display: flex;
+        flex-direction: row;
+        gap: var(--gap-small);
+    }
+    #contact{
+        margin-right: var(--gap-small);
+        margin-left: var(--gap-small);
     }
 }

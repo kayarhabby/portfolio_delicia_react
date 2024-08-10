@@ -2,7 +2,7 @@
   margin: 0 auto;
 }
 /* Pour les écrans de 768px de large ou moins */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #root {
     margin: 0 16px 0 16px;
   }

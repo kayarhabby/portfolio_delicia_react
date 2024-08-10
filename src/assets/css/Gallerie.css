@@ -60,7 +60,7 @@
 }
 
 /* Pour les écrans de 768px de large ou moins */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .gallerie_container {
         grid-template-columns: 1fr; /* Passer à une seule colonne */
     }
@@ -107,5 +107,10 @@
         bottom: var(--gap-small);
         left: var(--gap-small);
         width: calc(100% - 2 * var(--gap-small)); /* Ajuster la largeur pour tenir compte du padding */
+    }
+
+    .gallerie {
+        margin-right: var(--gap-small);
+        margin-left: var(--gap-small);
     }
 }

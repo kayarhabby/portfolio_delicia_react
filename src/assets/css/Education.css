@@ -78,7 +78,7 @@
 }
 
 /* Pour les écrans de 768px de large ou moins */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .education_container {
         grid-template-columns: 1fr;
     }
@@ -106,5 +106,9 @@
     .education_item_img img {
         transform: none; /* Désactiver la transformation de zoom */
         box-shadow: none; /* Supprimer l'ombre portée */
+    }
+    .education {
+       margin-right: var(--gap-small);
+       margin-left: var(--gap-small);
     }
 }

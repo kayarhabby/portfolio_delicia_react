@@ -56,7 +56,7 @@
 }
 
 /* Pour les écrans de 768px de large ou moins */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .header__container {
         height: auto; /* Adaptation de la hauteur pour les petits écrans */
         padding: var(--gap-medium); /* Réduction du padding pour s'adapter aux petits écrans */

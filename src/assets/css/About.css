@@ -7,6 +7,7 @@
     height: auto; /* Ajuste la hauteur pour le contenu dynamique */
     padding: var(--gap-large) 0; /* Ajout d'un padding pour le positionnement */
     margin-top: var(--gap-large); /* Marge au-dessus */
+    margin-bottom: var(--gap-large);
 }
 
 .about {
@@ -63,8 +64,19 @@
 }
 
 /* Pour les écrans de 768px de large ou moins */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .about_container {
         grid-template-columns: 1fr; /* Passer à une seule colonne */
+    }
+}
+
+/* Pour les écrans entre 768px et 1024px de large */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .about_container {
+        grid-template-columns: 1fr; /* Passer à une seule colonne */
+    }
+    #about {
+        margin-right: var(--gap-small);
+        margin-left: var(--gap-small);
     }
 }
