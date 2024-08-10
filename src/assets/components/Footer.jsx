@@ -43,27 +43,25 @@ const Footer = () => {
                     <ul>
                         <li>
                             <div className="cercle_img">
-                                <img src="/src/assets/images/casa.png" alt="maison"/>
+                                <i className="fa fa-map-marker"></i>
                             </div>
                             <a href="#">{t('footer.contact.address')}</a>
                         </li>
                         <li>
                             <div className="cercle_img">
-                                <img src="/src/assets/images/telephone.png" alt="telephone"/>
+                                <i className="fa fa-phone"></i>
                             </div>
                             <a href="#">{t('footer.contact.phone')}</a>
                         </li>
                         <li>
                             <div className="cercle_img">
-                                <img src="/src/assets/images/email.png" alt="email"/>
+                                <i className="fa fa-envelope"></i>
                             </div>
                             <a href={`mailto:${t('footer.contact.email')}`}>{t('footer.contact.email')}</a>
                         </li>
                     </ul>
                     <DownloadButton
                         downloadUrl="/src/assets/documents/certifications/2024-05-26_agir-pour-sa-sante-universite-de-liege-badge-de-reussite-fr.pdf"
-                        src="/src/assets/images/download-to-storage-drive.png"
-                        alt="Download to storage drive"
                         text ={t('footer.downloadCV')}
                     />
                 </div>
@@ -72,9 +70,7 @@ const Footer = () => {
                     <a href={`mailto:${t('footer.contact.email')}`}>
                         <button className="btn">
                             {t('footer.mailMe')}
-                            <div className="icon">
-                                <img src="/src/assets/images/paper-plane.png" alt="paper plane"/>
-                            </div>
+                            <i className="fa-solid fa-paper-plane"></i>
                         </button>
                     </a>
                 </div>
