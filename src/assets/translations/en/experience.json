@@ -1,0 +1,39 @@
+{
+  "experience": {
+    "title" : "Experience",
+    "stages": [
+      {
+        "title": "Intern at Médecins d'Afrique NGO",
+        "period": "October 2023 to January 2024",
+        "description": "Assistant in the fight against endemic diseases and co-responsible for the school health revitalization project (RESASCO)."
+      },
+      {
+        "title": "Intern at BACONGO Health District: Data Management and Epidemiological Surveillance",
+        "period": "November 2022 to June 2023",
+        "description": "Responsible for data collection and entry in DHIS2, formative supervision of data entry, and participation in micro-planning of district activities."
+      },
+      {
+        "title": "Intern at the Central Directorate of the National Program for Onchocerciasis Control",
+        "period": "September to October 2022",
+        "description": "Participate in planning mass drug distribution activities in various health districts of Brazzaville, ensure the availability of medicines, and write reports on the activities carried out."
+      }
+    ],
+    "professionalExperience": [
+      {
+        "title": "Independent Monitor for the 1st Round of the National Polio Vaccination Campaign in BACONGO Health District",
+        "period": "June 2023",
+        "description": "Check the vaccination status of children aged 0 to 5 years, identify those who are not vaccinated and proceed with their vaccination, while asking parents about the reasons for the non-vaccination of their children."
+      },
+      {
+        "title": "Supervisor for the Intensified Vaccination Activities (AVI) at Madame Health Center in BACONGO Health District",
+        "period": "December 2022",
+        "description": "Monitor field teams in their tasks, ensure the achievement of set vaccination goals for children, and write a final report on the activities carried out at Madame Health Center."
+      },
+      {
+        "title": "Surveyor for a Study on the Detention of Postpartum Women in MAKÉLÉKÉLÉ Maternity Wards",
+        "period": "September to October 2022",
+        "description": "Verify the presence of postpartum women detained in maternity wards and inquire about the reasons for their detention."
+      }
+    ]
+  }
+}
