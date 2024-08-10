@@ -38,3 +38,25 @@
     background-color: var(--hover-border-color);
     color: var(--white);
 }
+
+/* Pour les écrans de 768px de large ou moins */
+@media (max-width: 768px) {
+
+    /* Section "Compétences" : Passer d'une grille à deux colonnes à une seule colonne */
+    .competences_container {
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* Media Queries pour adapter le site à différentes tailles d'écran */
+/* Pour les écrans de 1024px de large ou moins */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* Section "Compétences" : Passer d'une grille à trois colonnes à deux colonnes */
+    .competences_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
