@@ -18,8 +18,6 @@ const About = () => {
                         <p>{t('about.goal')}</p>
                         <Button
                             downloadUrl="/src/assets/documents/certifications/2024-05-26_agir-pour-sa-sante-universite-de-liege-badge-de-reussite-fr.pdf"
-                            src="/src/assets/images/download-to-storage-drive.png"
-                            alt="Download to storage drive"
                             text ={t('about.downloadCV')}
                         />
                     </article>
