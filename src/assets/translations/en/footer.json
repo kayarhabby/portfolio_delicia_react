@@ -1,0 +1,31 @@
+{
+  "footer": {
+    "name": "Delicia Raelle",
+    "socialMedia": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn"
+    },
+    "links": {
+      "title": "Links",
+      "home": "Home",
+      "about": "About",
+      "education": "Education",
+      "competences": "Skills",
+      "experience": "Experience",
+      "gallerie": "Gallery",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Saint Paul, Ngangouoni (Makélékélé)",
+      "phone": "(+242) 06 470 0754",
+      "email": "raellekissangou@gmail.com",
+      "website": "www.website.com"
+    },
+    "downloadCV": "Download my CV",
+    "mailMe": "Send me an email",
+    "copyright": "Copyright © 2024 Portfolio. All Rights Reserved"
+  }
+}
