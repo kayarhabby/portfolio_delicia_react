@@ -137,3 +137,69 @@ nav > article {
         display: none;
     }
 }
+
+/* Pour les écrans entre 768px et 1024px de large */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav > article:first-child {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav section {
+        margin: 0;
+    }
+    .navbar_container nav > article .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    nav article section > ul {
+        flex-direction: column;
+        gap: var(--gap-medium); /* Espacement entre les éléments de la liste */
+        padding-left: 0;
+        margin: var(--gap-small) 0; /* Espacement vertical */
+        width: 100%;
+    }
+
+    nav section > ul li {
+        margin: 0;
+        border-top: 1px solid var(--border-color); /* Bordure supérieure */
+        width: 100%;
+    }
+
+    .menu-hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-hamburger a {
+        display: inline-block;
+        font-size: var(--font-size-large); /* Taille de police pour l'icône du menu */
+        margin-left: var(--gap-small); /* Marge à gauche */
+    }
+
+    .menu-hamburger .fa-x {
+        display: none;
+    }
+
+    .menu-hamburger.active .fa-bars {
+        display: none;
+    }
+
+    .menu-hamburger.active .fa-x {
+        display: inline-block;
+    }
+
+    /* Ensure visibility of menu when open */
+    .link_item.is-visible {
+        display: block;
+    }
+
+    .link_item {
+        display: none;
+    }
+}
