@@ -1,9 +1,9 @@
 .line {
     display: inline-block;
-    width: 50px; /* La largeur des barres horizontales */
-    height: 2px; /* La hauteur des barres horizontales */
-    background-color: forestgreen; /* La couleur des barres horizontales */
-    margin: 0 10px; /* L'espace entre les barres et l'image */
+    width: 50px; /* Gardé en dur car spécifique */
+    height: 2px; /* Gardé en dur car spécifique */
+    background-color: var(--tertiary-color);
+    margin: 0 10px;
 }
 
 .content_title_icon {
