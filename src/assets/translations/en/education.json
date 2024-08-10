@@ -1,0 +1,43 @@
+{
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "imgSrc": "/src/assets/images/nature_fleur.jpg",
+        "date": "Jan 12, 2024",
+        "title": "Bachelor's in Health Sciences with a focus on Public Health",
+        "description": "University studies at the Faculty of Health Sciences, degree obtained: Bachelor's in Health Sciences with a focus on Public Health."
+      },
+      {
+        "imgSrc": "/src/assets/images/techno.jpg",
+        "date": "Jan 12, 2024",
+        "title": "Scientific Baccalaureate",
+        "description": "Secondary education, degree obtained: Baccalaureate series C, with honors from the Lycée de la Réconciliation, Brazzaville."
+      },
+      {
+        "imgSrc": "/src/assets/images/techno.jpg",
+        "date": "April 2024",
+        "title": "MLM",
+        "description": "Obtained a master's certification in intermediate-level cadre training (MLM)."
+      },
+      {
+        "imgSrc": "/src/assets/images/techno.jpg",
+        "date": "November 2023",
+        "title": "MOOC",
+        "description": "Act for your health."
+      },
+      {
+        "imgSrc": "/src/assets/images/techno.jpg",
+        "date": "October 2023",
+        "title": "MOOC",
+        "description": "Write and publish a scientific article."
+      },
+      {
+        "imgSrc": "/src/assets/images/techno.jpg",
+        "date": "April 2023",
+        "title": "MOOC",
+        "description": "Achievement badge for the MOOC on environmental health."
+      }
+    ]
+  }
+}
