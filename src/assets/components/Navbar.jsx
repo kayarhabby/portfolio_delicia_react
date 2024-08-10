@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import i18n from '../js/i18n';
+import i18n from '../js/i18n'; // Assurez-vous que ce chemin est correct
 import '../css/Navbar.css';
 
 const Navbar = () => {
@@ -56,19 +56,19 @@ const Navbar = () => {
                 <article className={`link_item ${isMenuOpen ? 'is-visible' : ''}`}>
                     <section>
                         <ul>
-                            <li><a href="#home" className={activeLink === 'home' ? 'active' : ''}>Home</a></li>
-                            <li><a href="#about" className={activeLink === 'about' ? 'active' : ''}>A propos</a></li>
-                            <li><a href="#education" className={activeLink === 'education' ? 'active' : ''}>Education</a></li>
-                            <li><a href="#competences" className={activeLink === 'competences' ? 'active' : ''}>Competences</a></li>
-                            <li><a href="#experience" className={activeLink === 'experience' ? 'active' : ''}>Expérience</a></li>
-                            <li><a href="#gallerie" className={activeLink === 'gallerie' ? 'active' : ''}>Gallerie</a></li>
-                            <li><a href="#contact" className={activeLink === 'contact' ? 'active' : ''}>Contact</a></li>
+                            <li><a href="#home" className={activeLink === 'home' ? 'active' : ''}>{t('navbar.home')}</a></li>
+                            <li><a href="#about" className={activeLink === 'about' ? 'active' : ''}>{t('navbar.about')}</a></li>
+                            <li><a href="#education" className={activeLink === 'education' ? 'active' : ''}>{t('navbar.education')}</a></li>
+                            <li><a href="#competences" className={activeLink === 'competences' ? 'active' : ''}>{t('navbar.competences')}</a></li>
+                            <li><a href="#experience" className={activeLink === 'experience' ? 'active' : ''}>{t('navbar.experience')}</a></li>
+                            <li><a href="#gallerie" className={activeLink === 'gallerie' ? 'active' : ''}>{t('navbar.gallerie')}</a></li>
+                            <li><a href="#contact" className={activeLink === 'contact' ? 'active' : ''}>{t('navbar.contact')}</a></li>
                         </ul>
                     </section>
                     <section>
-                        <select className="form-select" id="langues" name="langues" onChange={handleLanguageChange}>
-                            <option value="en">{t('language.default')}</option>
-                            <option value="fr">{t('language.fr')}</option>
+                        <select className="form-select" id="langues" name="langues" onChange={handleLanguageChange} defaultValue={i18n.language}>
+                            <option value="fr">{t('navbar.language.default')}</option>
+                            <option value="en">{t('navbar.language.en')}</option>
                         </select>
                     </section>
                 </article>
