@@ -7,7 +7,7 @@ const Footer = () => {
     const { t } = useTranslation('footer');
 
     return (
-        <div className="footer_container" id="contact">
+        <div className="footer_container">
             <section className="footer_content">
                 <div className="name">
                     <span>{t('footer.name')}</span>
