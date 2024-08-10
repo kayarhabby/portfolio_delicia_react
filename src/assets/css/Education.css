@@ -76,3 +76,35 @@
 .readmoreContainer:hover {
     cursor: pointer;
 }
+
+/* Pour les écrans de 768px de large ou moins */
+@media (max-width: 768px) {
+    .education_container {
+        grid-template-columns: 1fr;
+    }
+
+    .education_item_img {
+        position: static; /* Retirer position relative pour les petits écrans */
+    }
+
+    .education_item_img img {
+        transform: none; /* Désactiver la transformation de zoom */
+        box-shadow: none; /* Supprimer l'ombre portée */
+    }
+}
+
+/* Pour les écrans entre 768px et 1024px de large */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .education_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .education_item_img {
+        position: static; /* Retirer position relative pour les tablettes et mobiles */
+    }
+
+    .education_item_img img {
+        transform: none; /* Désactiver la transformation de zoom */
+        box-shadow: none; /* Supprimer l'ombre portée */
+    }
+}
