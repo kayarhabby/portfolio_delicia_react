@@ -148,7 +148,7 @@
     display: flex;
     align-items: center;
     padding: var(--btn-padding); /* Utilisation de la variable pour le padding */
-    width: 171px;
+    width: 180px;
     gap: var(--gap-small);
 }
 
