@@ -17,7 +17,7 @@ const Experience = () => {
                 <div>
                     <section className="experience_icon_title">
                         <i className="fa-solid fa-business-time fa-2x"></i>
-                        <h2>{t('experience.stagesTitle')}</h2>
+                        <h2>{t('experience.subtitle')}</h2>
                     </section>
                     <section className="experience_content">
                         {stages.map((exp, index) => (
@@ -33,7 +33,7 @@ const Experience = () => {
                 <div>
                     <section className="experience_icon_title">
                         <i className="fa-solid fa-briefcase fa-2x"></i>
-                        <h2>{t('experience.professionalExperienceTitle')}</h2>
+                        <h2>{t('experience.subtitle2')}</h2>
                     </section>
                     <section className="experience_content">
                         {professionalExperience.map((exp, index) => (
