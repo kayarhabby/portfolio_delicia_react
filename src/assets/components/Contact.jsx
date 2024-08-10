@@ -21,7 +21,7 @@ const Contact = () => {
                         ></iframe>
                     </div>
                     <div className="contact-info">
-                        <h3>Yogas Address</h3>
+                        <h3>Adresse</h3>
                         <p>
                             <i className="fa fa-map-marker"></i> rue Saint Paul, Ngangouoni (Makélékélé), Brazzaville
                         </p>
