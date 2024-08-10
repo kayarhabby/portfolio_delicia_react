@@ -25,15 +25,18 @@ const Contact = () => {
                     </div>
                     <div className="contact-info">
                         <h3>{t('contact.address_title')}</h3>
-                        <p>
-                            <i className="fa fa-map-marker"></i> {t('contact.address_text')}
-                        </p>
-                        <p>
-                            <i className="fa fa-phone"></i> {t('contact.phone')}: (+242) 06 470 07 54
-                        </p>
-                        <p>
-                            <i className="fa fa-envelope"></i> {t('contact.email')}: raellekissangou@gmail.com
-                        </p>
+                        <section>
+                            <p>
+                                <i className="fa fa-map-marker"></i> {t('contact.address_text')}
+                            </p>
+                            <p>
+                                <i className="fa fa-phone"></i> {t('contact.phone')}: (+242) 06 470 07 54
+                            </p>
+                            <p>
+                                <i className="fa fa-envelope"></i> {t('contact.email')}: raellekissangou@gmail.com
+                            </p>
+                        </section>
+
                     </div>
                 </div>
             </section>
