@@ -55,12 +55,6 @@
     margin: 0;
 }
 
-/*.icon img {*/
-/*    width: var(--icon-size-small); !* Taille des icônes *!*/
-/*    height: var(--icon-size-small);*/
-/*    margin: 0;*/
-/*}*/
-
 .about_content button {
     display: flex;
     justify-content: space-evenly;
