@@ -10,6 +10,7 @@
 .gallerie_container {
     max-width: var(--content-max-width);
     display: grid;
+    grid-template-rows: auto;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap-small);
 }
@@ -30,6 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Assure que le texte reste positionné correctement */
 }
 
 .gallerie_items_img img {
@@ -52,4 +54,58 @@
     background: var(--overlay-color);
     padding: var(--gap-small);
     border-radius: var(--border-radius-small);
+    margin: 0; /* S'assurer qu'il n'y a pas de marge supplémentaire */
+    width: calc(100% - 2 * var(--gap-small)); /* Ajuster la largeur pour tenir compte du padding */
+    box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+}
+
+/* Pour les écrans de 768px de large ou moins */
+@media (max-width: 768px) {
+    .gallerie_container {
+        grid-template-columns: 1fr; /* Passer à une seule colonne */
+    }
+
+    .gallerie_content:nth-child(1),
+    .gallerie_content:nth-last-child(1) {
+        grid-column: span 1;
+    }
+
+    .gallerie_items_img {
+        position: relative; /* Assurer la position relative */
+    }
+
+    .gallerie_items_img img {
+        transform: none; /* Désactiver la transformation de zoom */
+        box-shadow: none; /* Supprimer l'ombre portée */
+    }
+
+    .gallerie_items_img h4 {
+        /* Ajuster la position du texte en fonction de l'image */
+        bottom: var(--gap-small);
+        left: var(--gap-small);
+        width: calc(100% - 2 * var(--gap-small)); /* Ajuster la largeur pour tenir compte du padding */
+    }
+}
+
+/* Pour les écrans entre 768px et 1024px de large */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .gallerie_container {
+        grid-template-columns: repeat(2, 1fr); /* Passer à deux colonnes */
+    }
+
+    .gallerie_items_img {
+        position: relative; /* Assurer la position relative */
+    }
+
+    .gallerie_items_img img {
+        transform: none; /* Désactiver la transformation de zoom */
+        box-shadow: none; /* Supprimer l'ombre portée */
+    }
+
+    .gallerie_items_img h4 {
+        /* Ajuster la position du texte en fonction de l'image */
+        bottom: var(--gap-small);
+        left: var(--gap-small);
+        width: calc(100% - 2 * var(--gap-small)); /* Ajuster la largeur pour tenir compte du padding */
+    }
 }
