@@ -1,12 +1,15 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../css/Contact.css';
 import Title from "./Title.jsx";
 
 const Contact = () => {
+    const { t } = useTranslation('contact');
+
     return (
         <div id="contact">
             <section className="contact-section">
-                <Title title = "contact" />
+                <Title title={t('contact.title')} />
                 <div className="contact-container">
                     <div className="map-and-info">
                         <iframe
@@ -21,15 +24,15 @@ const Contact = () => {
                         ></iframe>
                     </div>
                     <div className="contact-info">
-                        <h3>Adresse</h3>
+                        <h3>{t('contact.address_title')}</h3>
                         <p>
-                            <i className="fa fa-map-marker"></i> rue Saint Paul, Ngangouoni (Makélékélé), Brazzaville
+                            <i className="fa fa-map-marker"></i> {t('contact.address_text')}
                         </p>
                         <p>
-                            <i className="fa fa-phone"></i> (+242) 06 470 07 54
+                            <i className="fa fa-phone"></i> {t('contact.phone')}: (+242) 06 470 07 54
                         </p>
                         <p>
-                            <i className="fa fa-envelope"></i> raellekissangou@gmail.com
+                            <i className="fa fa-envelope"></i> {t('contact.email')}: raellekissangou@gmail.com
                         </p>
                     </div>
                 </div>
