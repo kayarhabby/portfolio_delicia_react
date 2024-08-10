@@ -47,23 +47,3 @@
 .header__container button {
     z-index: 2;
 }
-
-.line {
-    display: inline-block;
-    width: 50px; /* Gardé en dur car spécifique */
-    height: 2px; /* Gardé en dur car spécifique */
-    background-color: var(--tertiary-color);
-    margin: 0 10px;
-}
-
-.content_title_icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.content_title_text {
-    display: flex;
-    align-items: center;
-}
