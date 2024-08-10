@@ -129,6 +129,7 @@
     align-items: center;
     padding: var(--btn-padding); /* Utilisation de la variable pour le padding */
     column-gap: var(--gap-small); /* Espacement entre les éléments du bouton */
+    gap: var(--gap-small);
 }
 
 .footer_container a {
@@ -148,6 +149,7 @@
     align-items: center;
     padding: var(--btn-padding); /* Utilisation de la variable pour le padding */
     width: 171px;
+    gap: var(--gap-small);
 }
 
 /* Pour les écrans de 768px de large ou moins */
