@@ -1,0 +1,37 @@
+{
+  "competences": {
+    "title": "Skills",
+    "items": [
+      {
+        "icon": "fa-globe",
+        "title": "Health Data Management",
+        "description": "Expert in collecting, entering, analyzing, and interpreting health data, with a strong background in the field."
+      },
+      {
+        "icon": "fa-virus",
+        "title": "Solid Knowledge in Epidemiology",
+        "description": "Experienced in implementing and monitoring vaccination activities, with a constant commitment to ensuring effective coverage and optimal process execution."
+      },
+      {
+        "icon": "fa-book",
+        "title": "Scientific Writing",
+        "description": "Expertise in writing and publishing scientific articles, demonstrated by solid experience in the field."
+      },
+      {
+        "icon": "fa-gear",
+        "title": "Project Management",
+        "description": "Experienced in supervising field teams, with proven skills in planning, organizing, and monitoring public health activities. Capable of writing detailed and relevant activity reports."
+      },
+      {
+        "icon": "fa-user",
+        "title": "Interpersonal Skills",
+        "description": "Excellent ability to communicate and interact with various stakeholders. Adaptability to different contexts, with an aptitude for initiative and independent work to effectively address challenges."
+      },
+      {
+        "icon": "fa-person-chalkboard",
+        "title": "Personal Development",
+        "description": "Commitment to continuous improvement through certifications, MOOCs, and additional training. Active participation in events to share experiences and highlight research achievements."
+      }
+    ]
+  }
+}
