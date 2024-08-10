@@ -8,6 +8,7 @@ import Quotes from "../components/Quotes.jsx";
 import Competences from "../components/Competences.jsx";
 import Experience from "../components/Experience.jsx";
 import Gallerie from "../components/Gallerie.jsx";
+import Contact from "../components/Contact.jsx";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Experience />
       {/*<Quotes />*/}
       <Gallerie />
+      <Contact />
       <Footer />
     </div>
   )
