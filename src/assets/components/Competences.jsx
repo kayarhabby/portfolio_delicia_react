@@ -1,46 +1,23 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Title from "./Title.jsx";
 import "../css/Competences.css";
 
 const Competences = () => {
+    const { t } = useTranslation('competences');
 
-    const competencesData = [
-        {
-            icon: "fa-globe",
-            title: "Gestion des données de santé",
-            description: "Expert en collecte, saisie, analyse et interprétation des données de santé, avec une expérience solide dans le domaine."
-        },
-        {
-            icon: "fa-virus",
-            title: "Connaissance solide en Épidémiologie",
-            description: "Expérimenté dans la mise en œuvre et le suivi d'activités de vaccination, avec un engagement constant pour assurer une couverture efficace et un déroulement optimal des processus."
-        },
-        {
-            icon: "fa-book",
-            title: "Rédaction scientifique",
-            description: "Expertise en rédaction et publication d'articles scientifiques, démontrée par une solide expérience dans le domaine."
-        },
-        {
-            icon: "fa-gear",
-            title: "Gestion de projet",
-            description: "Expérimenté dans la supervision d'équipes de terrain, avec des compétences éprouvées en planification, organisation et suivi des activités de santé publique. Capable de rédiger des rapports d'activités détaillés et pertinents."
-        },
-        {
-            icon: "fa-user",
-            title: "Compétences interpersonnelles",
-            description: "Excellente capacité à communiquer et à interagir avec divers acteurs. Adaptabilité à différents contextes, avec une aptitude à l'initiative et au travail autonome pour relever les défis efficacement."
-        },
-        {
-            icon: "fa-person-chalkboard",
-            title: "Développement Personnel",
-            description: "Engagement envers le perfectionnement continu par des certifications, MOOC et formations complémentaires. Participation active à des événements pour partager des expériences et valoriser les acquis de recherche."
-        }
-    ];
+    // Obtention des données de compétences
+    const competencesData = t('competences.items', { returnObjects: true });
 
+    // Assurez-vous que les données sont bien un tableau avant de les utiliser
+    if (!Array.isArray(competencesData)) {
+        console.error('Competences data is not an array:', competencesData);
+        return null; // Ou affichez un message d'erreur approprié
+    }
 
     return (
         <div id='competences' className="competences">
-            <Title title="Compétences" />
+            <Title title={t('competences.title')} />
             <section className="competences_container">
                 {competencesData.map((item, index) => (
                     <article className="competences_items" key={index}>
