@@ -2,12 +2,14 @@
 .header__container {
     background-image: url("/src/assets/images/laboratory.jpg");
     background-size: cover;
+    background-position: center;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: var(--header-height);
+    padding: var(--gap-large); /* Ajout d'un padding pour une meilleure gestion des espaces internes */
 }
 
 .header__container::before {
@@ -28,11 +30,13 @@
     flex-direction: column;
     position: relative;
     z-index: 2;
+    text-align: center; /* Assure que le texte est centré */
 }
 
 .header__article_content p {
     color: var(--text-color-white);
     font-size: var(--font-size-huge);
+    margin: 0;
 }
 
 .cercle_img {
@@ -42,8 +46,45 @@
     border-radius: var(--border-radius-circle);
     position: relative;
     z-index: 2;
+    margin: var(--gap-medium); /* Ajout d'un margin pour espacer le cercle des autres éléments */
 }
 
 .header__container button {
     z-index: 2;
+    padding: var(--btn-padding); /* Utilisation de la variable pour le padding des boutons */
+    width: var(--btn-width); /* Utilisation de la variable pour la largeur du bouton */
+}
+
+/* Pour les écrans de 768px de large ou moins */
+@media (max-width: 768px) {
+    .header__container {
+        height: auto; /* Adaptation de la hauteur pour les petits écrans */
+        padding: var(--gap-medium); /* Réduction du padding pour s'adapter aux petits écrans */
+    }
+
+    .header__article_content p {
+        font-size: var(--font-size-xlarge); /* Réduction de la taille de la police pour les petits écrans */
+    }
+
+    .cercle_img {
+        height: calc(var(--circle-diameter) * 0.8); /* Réduction de la taille du cercle */
+        width: calc(var(--circle-diameter) * 0.8); /* Réduction de la taille du cercle */
+    }
+}
+
+/* Pour les écrans entre 768px et 1024px de large */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header__container {
+        height: var(--header-height); /* Hauteur normale pour les tablettes */
+        padding: var(--gap-medium); /* Ajustement du padding */
+    }
+
+    .header__article_content p {
+        font-size: var(--font-size-xxlarge); /* Ajustement de la taille de la police pour les tablettes */
+    }
+
+    .cercle_img {
+        height: calc(var(--circle-diameter) * 0.9); /* Réduction légère de la taille du cercle */
+        width: calc(var(--circle-diameter) * 0.9); /* Réduction légère de la taille du cercle */
+    }
 }
