@@ -42,3 +42,10 @@
     margin-right: 10px;
     color: var(--highlight-color);
 }
+
+/* Pour les écrans de 768px de large ou moins */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
