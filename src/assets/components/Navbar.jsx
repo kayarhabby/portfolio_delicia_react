@@ -18,36 +18,39 @@ const Navbar = () => {
     };
 
     return (
-        <nav id="navbar">
-            <article>
-                <section
-                    className={`menu-hamburger ${isMenuOpen ? 'active' : ''}`}
-                    onClick={toggleMenu}
-                >
-                    <a href="#"><i className="fa-solid fa-bars"></i></a>
-                    <a href="#"><i className="fa-solid fa-x"></i></a>
-                </section>
-                <a href="/"><img src="/src/assets/images/lotus.png" alt="lotus icon" className="icon"/></a>
-            </article>
-            <article className={`link_item ${isMenuOpen ? 'is-visible' : ''}`}>
-                <section>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#conferences">Conférences</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </section>
-                <section>
-                    <select className="form-select" id="langues" name="langues" onChange={handleLanguageChange}>
-                        <option value="en">{t('language.default')}</option>
-                        <option value="fr">{t('language.fr')}</option>
-                    </select>
-                </section>
-            </article>
-        </nav>
+        <div className="navbar_container">
+            <nav id="navbar">
+                <article>
+                    <section
+                        className={`menu-hamburger ${isMenuOpen ? 'active' : ''}`}
+                        onClick={toggleMenu}
+                    >
+                        <a href="#"><i className="fa-solid fa-bars"></i></a>
+                        <a href="#"><i className="fa-solid fa-x"></i></a>
+                    </section>
+                    <a href="/"><img src="/src/assets/images/lotus.png" alt="lotus icon" className="icon"/></a>
+                </article>
+                <article className={`link_item ${isMenuOpen ? 'is-visible' : ''}`}>
+                    <section>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#conferences">Conférences</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <select className="form-select" id="langues" name="langues" onChange={handleLanguageChange}>
+                            <option value="en">{t('language.default')}</option>
+                            <option value="fr">{t('language.fr')}</option>
+                        </select>
+                    </section>
+                </article>
+            </nav>
+        </div>
+
     );
 };
 export default Navbar;

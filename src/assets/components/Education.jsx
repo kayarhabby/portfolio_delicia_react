@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Title from "./Title.jsx";
+import "../css/Education.css";
 
 const Education = () => {
 

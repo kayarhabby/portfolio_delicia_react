@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Title from "./Title.jsx";
+import "../css/Quotes.css";
 
 const Quotes = () => {
     // Correct useState syntax to initialize state

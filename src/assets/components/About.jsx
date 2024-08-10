@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from "./Title.jsx";
+import "../css/About.css";
 
 const About = () => {
     return (

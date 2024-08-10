@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from "./Title.jsx";
+import "../css/Experience.css";
 
 // Données des expériences sous forme de tableau d'objets
 const experiences = {
