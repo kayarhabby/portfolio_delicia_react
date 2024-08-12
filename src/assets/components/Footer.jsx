@@ -11,20 +11,6 @@ const Footer = () => {
             <section className="footer_content">
                 <div className="name">
                     <span>{t('footer.name')}</span>
-                    <div className="icon_container">
-                        <a href="#">
-                            <img src="./images/facebook.png" alt={t('footer.socialMedia.facebook')} />
-                        </a>
-                        <a href="#">
-                            <img src="./images/instagram.png" alt={t('footer.socialMedia.instagram')}/>
-                        </a>
-                        <a href="#">
-                            <img src="./images/twitter.png" alt={t('footer.socialMedia.twitter')}/>
-                        </a>
-                        <a href="#">
-                            <img src="./images/linkedin.png" alt={t('footer.socialMedia.linkedin')}/>
-                        </a>
-                    </div>
                 </div>
                 <div className="links">
                     <h3>{t('footer.links.title')}</h3>
