@@ -61,7 +61,7 @@ const Footer = () => {
                         </li>
                     </ul>
                     <DownloadButton
-                        downloadUrl="/src/assets/documents/certifications/2024-05-26_agir-pour-sa-sante-universite-de-liege-badge-de-reussite-fr.pdf"
+                        downloadUrl="./documents/certifications/CV_actualisee_Raelle.pdf"
                         text ={t('footer.downloadCV')}
                     />
                 </div>

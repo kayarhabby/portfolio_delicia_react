@@ -7,7 +7,7 @@ const Title = (props) => {
             <h1>{props.title}</h1>
             <div className='content_title_text'>
                 <span className="line"></span>
-                <img src="/portfolio_delicia_react/src/assets/images/lotus.png" alt="lotus-icon" className="icon"/>
+                <img src="./images/lotus.png" alt="lotus-icon" className="icon"/>
                 <span className="line"></span>
             </div>
         </section>

@@ -3,46 +3,39 @@
     "title": "Éducation",
     "items": [
       {
-        "imgSrc": "/portfolio_delicia_react/src/assets/images/nature_fleur.jpg",
+        "imgSrc": "./images/nature_fleur.jpg",
         "date": "12 Jan, 2024",
         "title": "Licence en Sciences de la Santé avec spécialisation en Santé Publique",
         "description": "Études universitaires à la Faculté des Sciences de la Santé, diplôme obtenu : Licence en Sciences de la Santé avec spécialisation en Santé Publique.",
-        "link": "/portfolio_delicia_react/src/assets/documents/certifications/Attestation_succes.pdf"
+        "link": "./documents/certifications/Attestation_succes.pdf"
       },
       {
-        "imgSrc": "/portfolio_delicia_react/src/assets/images/techno.jpg",
+        "imgSrc": "./images/techno.jpg",
         "date": "12 Jan, 2024",
         "title": "Baccalauréat Scientifique",
         "description": "Éducation secondaire, diplôme obtenu : Baccalauréat série C, mention assez-bien au Lycée de la Réconciliation, Brazzaville.",
-        "link": "/portfolio_delicia_react/src/assets/documents/certifications/Attestation_succes.pdf"
+        "link": "./documents/certifications/Attestation_bac.pdf"
       },
       {
-        "imgSrc": "/portfolio_delicia_react/src/assets/images/techno.jpg",
+        "imgSrc": "./images/techno.jpg",
         "date": "Avril 2024",
         "title": "MLM",
         "description": "Obtention d'une certification master de la formation des cadres de niveau intermédiaire (MLM).",
-        "link": "/portfolio_delicia_react/src/assets/documents/certifications/MLMMasterCertificate.pdf"
+        "link": "./documents/certifications/MLMMasterCertificate.pdf"
       },
       {
-        "imgSrc": "/portfolio_delicia_react/src/assets/images/techno.jpg",
+        "imgSrc": "./images/techno.jpg",
         "date": "Novembre 2023",
         "title": "MOOC",
         "description": "Agir pour sa santé.",
-        "link": "/portfolio_delicia_react/src/assets/documents/certifications/2023-04-25_sante-environnementale-universite-de-bordeaux-badge-de-reussite-de-la-formation-fr.pdf"
+        "link": "./documents/certifications/2023-04-25_sante-environnementale-universite-de-bordeaux-badge-de-reussite-de-la-formation-fr.pdf"
       },
       {
-        "imgSrc": "/portfolio_delicia_react/src/assets/images/techno.jpg",
-        "date": "Octobre 2023",
-        "title": "MOOC",
-        "description": "Rédiger et publier un article scientifique.",
-        "link": "/portfolio_delicia_react/src/assets/documents/certifications/2023-04-25_sante-environnementale-universite-de-bordeaux-badge-de-reussite-de-la-formation-fr.pdf"
-      },
-      {
-        "imgSrc": "/portfolio_delicia_react/src/assets/images/techno.jpg",
+        "imgSrc": "./images/techno.jpg",
         "date": "Avril 2023",
         "title": "MOOC",
         "description": "Badge de réussite du MOOC sur la santé environnementale.",
-        "link": "/portfolio_delicia_react/src/assets/documents/certifications/2024-05-26_agir-pour-sa-sante-universite-de-liege-badge-de-reussite-fr.pdf"
+        "link": "./documents/certifications/2024-05-26_agir-pour-sa-sante-universite-de-liege-badge-de-reussite-fr.pdf"
       }
     ]
   }
