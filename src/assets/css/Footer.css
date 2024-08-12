@@ -33,16 +33,6 @@
     margin-right: 50px;
 }
 
-.name .icon_container {
-    display: flex;
-    column-gap: var(--gap-medium); /* Espacement entre les icônes */
-}
-
-.name .icon_container img {
-    width: var(--icon-size-large); /* Taille des icônes */
-    height: var(--icon-size-large);
-}
-
 .links {
     display: flex;
     flex-direction: column;
