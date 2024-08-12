@@ -24,14 +24,14 @@
         "link": "./documents/certifications/MLMMasterCertificate.pdf"
       },
       {
-        "imgSrc": "./images/mooc_environnement.jpg",
+        "imgSrc": "./images/Agir_pour_sa_sante.jpg",
         "date": "Novembre 2023",
         "title": "MOOC",
         "description": "Agir pour sa santé.",
         "link": "./documents/certifications/2023-04-25_sante-environnementale-universite-de-bordeaux-badge-de-reussite-de-la-formation-fr.pdf"
       },
       {
-        "imgSrc": "./images/mooc_sante.jpg",
+        "imgSrc": "./images/Sante_environnementale.png",
         "date": "Avril 2023",
         "title": "MOOC",
         "description": "Badge de réussite du MOOC sur la santé environnementale.",
