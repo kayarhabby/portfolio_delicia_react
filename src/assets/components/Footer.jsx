@@ -13,16 +13,16 @@ const Footer = () => {
                     <span>{t('footer.name')}</span>
                     <div className="icon_container">
                         <a href="#">
-                            <img src="/portfolio_delicia_react/src/assets/images/facebook.png" alt={t('footer.socialMedia.facebook')} />
+                            <img src="/src/assets/images/facebook.png" alt={t('footer.socialMedia.facebook')} />
                         </a>
                         <a href="#">
-                            <img src="/portfolio_delicia_react/src/assets/images/instagram.png" alt={t('footer.socialMedia.instagram')}/>
+                            <img src="/src/assets/images/instagram.png" alt={t('footer.socialMedia.instagram')}/>
                         </a>
                         <a href="#">
-                            <img src="/portfolio_delicia_react/src/assets/images/twitter.png" alt={t('footer.socialMedia.twitter')}/>
+                            <img src="/src/assets/images/twitter.png" alt={t('footer.socialMedia.twitter')}/>
                         </a>
                         <a href="#">
-                            <img src="/portfolio_delicia_react/src/assets/images/linkedin.png" alt={t('footer.socialMedia.linkedin')}/>
+                            <img src="/src/assets/images/linkedin.png" alt={t('footer.socialMedia.linkedin')}/>
                         </a>
                     </div>
                 </div>
