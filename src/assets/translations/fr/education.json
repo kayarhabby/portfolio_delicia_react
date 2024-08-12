@@ -4,14 +4,14 @@
     "items": [
       {
         "imgSrc": "./images/licence.jpg",
-        "date": "12 Jan, 2024",
+        "date": "Septembre 2023",
         "title": "Licence en Sciences de la Santé avec spécialisation en Santé Publique",
         "description": "Études universitaires à la Faculté des Sciences de la Santé, diplôme obtenu : Licence en Sciences de la Santé avec spécialisation en Santé Publique.",
         "link": "./documents/certifications/Attestation_succes.pdf"
       },
       {
         "imgSrc": "./images/baccalaureat.jpg",
-        "date": "12 Jan, 2024",
+        "date": "Août 2020",
         "title": "Baccalauréat Scientifique",
         "description": "Éducation secondaire, diplôme obtenu : Baccalauréat série C, mention assez-bien au Lycée de la Réconciliation, Brazzaville.",
         "link": "./documents/certifications/attestation_bac.pdf"
