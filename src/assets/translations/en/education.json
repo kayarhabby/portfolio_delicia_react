@@ -3,46 +3,46 @@
     "title": "Education",
     "items": [
       {
-        "imgSrc": "/src/assets/images/nature_fleur.jpg",
+        "imgSrc": "/portfolio_delicia_react/src/assets/images/nature_fleur.jpg",
         "date": "Jan 12, 2024",
         "title": "Bachelor's in Health Sciences with a focus on Public Health",
         "description": "University studies at the Faculty of Health Sciences, degree obtained: Bachelor's in Health Sciences with a focus on Public Health.",
-        "link": "/src/assets/documents/certifications/Attestation_succes.pdf"
+        "link": "/portfolio_delicia_react/src/assets/documents/certifications/Attestation_succes.pdf"
       },
       {
-        "imgSrc": "/src/assets/images/techno.jpg",
+        "imgSrc": "/portfolio_delicia_react/src/assets/images/techno.jpg",
         "date": "Jan 12, 2024",
         "title": "Scientific Baccalaureate",
         "description": "Secondary education, degree obtained: Baccalaureate series C, with honors from the Lycée de la Réconciliation, Brazzaville.",
-        "link": "/src/assets/documents/certifications/Attestation_succes.pdf"
+        "link": "/portfolio_delicia_react/src/assets/documents/certifications/Attestation_succes.pdf"
       },
       {
-        "imgSrc": "/src/assets/images/techno.jpg",
+        "imgSrc": "/portfolio_delicia_react/src/assets/images/techno.jpg",
         "date": "April 2024",
         "title": "MLM",
         "description": "Obtained a master's certification in intermediate-level cadre training (MLM).",
-        "link": "/src/assets/documents/certifications/MLMMasterCertificate.pdf"
+        "link": "/portfolio_delicia_react/src/assets/documents/certifications/MLMMasterCertificate.pdf"
       },
       {
-        "imgSrc": "/src/assets/images/techno.jpg",
+        "imgSrc": "/portfolio_delicia_react/src/assets/images/techno.jpg",
         "date": "November 2023",
         "title": "MOOC",
         "description": "Act for your health.",
-        "link": "/src/assets/documents/certifications/2023-04-25_sante-environnementale-universite-de-bordeaux-badge-de-reussite-de-la-formation-fr.pdf"
+        "link": "/portfolio_delicia_react/src/assets/documents/certifications/2023-04-25_sante-environnementale-universite-de-bordeaux-badge-de-reussite-de-la-formation-fr.pdf"
       },
       {
-        "imgSrc": "/src/assets/images/techno.jpg",
+        "imgSrc": "/portfolio_delicia_react/src/assets/images/techno.jpg",
         "date": "October 2023",
         "title": "MOOC",
         "description": "Write and publish a scientific article.",
-        "link": "/src/assets/documents/certifications/2023-04-25_sante-environnementale-universite-de-bordeaux-badge-de-reussite-de-la-formation-fr.pdf"
+        "link": "/portfolio_delicia_react/src/assets/documents/certifications/2023-04-25_sante-environnementale-universite-de-bordeaux-badge-de-reussite-de-la-formation-fr.pdf"
       },
       {
-        "imgSrc": "/src/assets/images/techno.jpg",
+        "imgSrc": "/portfolio_delicia_react/src/assets/images/techno.jpg",
         "date": "April 2023",
         "title": "MOOC",
         "description": "Achievement badge for the MOOC on environmental health.",
-        "link": "/src/assets/documents/certifications/2024-05-26_agir-pour-sa-sante-universite-de-liege-badge-de-reussite-fr.pdf"
+        "link": "/portfolio_delicia_react/src/assets/documents/certifications/2024-05-26_agir-pour-sa-sante-universite-de-liege-badge-de-reussite-fr.pdf"
       }
     ]
   }

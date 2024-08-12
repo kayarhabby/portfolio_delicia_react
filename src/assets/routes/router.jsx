@@ -3,7 +3,7 @@ import App from "../view/App.jsx";
 
 const router = createBrowserRouter([
     {
-        path : '/',
+        path : '/portfolio_delicia_react',
         element : <App />
     }
 ])

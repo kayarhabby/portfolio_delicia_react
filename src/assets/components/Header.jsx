@@ -7,7 +7,7 @@ export default function Header() {
 
     return (
         <header className="header__container">
-            <img src="/src/assets/images/kimLee.jpg" alt="kim lee" className="cercle_img"/>
+            <img src="/portfolio_delicia_react/src/assets/images/kimLee.jpg" alt="kim lee" className="cercle_img"/>
             <article className="header__article_content">
                 <p>{t('header.greeting')}</p>
                 <p>{t('header.description')}</p>

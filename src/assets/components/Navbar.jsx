@@ -51,7 +51,7 @@ const Navbar = () => {
                         <a href="#"><i className="fa-solid fa-bars"></i></a>
                         <a href="#"><i className="fa-solid fa-x"></i></a>
                     </section>
-                    <a href="/"><img src="/src/assets/images/lotus.png" alt="lotus icon" className="icon" /></a>
+                    <a href="/"><img src="/portfolio_delicia_react/src/assets/images/lotus.png" alt="lotus icon" className="icon" /></a>
                 </article>
                 <article className={`link_item ${isMenuOpen ? 'is-visible' : ''}`}>
                     <section>

@@ -7,10 +7,10 @@ const Gallerie = () => {
     const { t } = useTranslation('gallerie');
 
     const images = [
-        { src: "/src/assets/images/techno.jpg", alt: t('gallerie.image1'), title: t('gallerie.image1') },
-        { src: "/src/assets/images/nature_fleur.jpg", alt: t('gallerie.image2'), title: t('gallerie.image2') },
-        { src: "/src/assets/images/nature_fleur.jpg", alt: t('gallerie.image3'), title: t('gallerie.image3') },
-        { src: "/src/assets/images/nature_fleur.jpg", alt: t('gallerie.image4'), title: t('gallerie.image4') }
+        { src: "/portfolio_delicia_react/src/assets/images/techno.jpg", alt: t('gallerie.image1'), title: t('gallerie.image1') },
+        { src: "/portfolio_delicia_react/src/assets/images/nature_fleur.jpg", alt: t('gallerie.image2'), title: t('gallerie.image2') },
+        { src: "/portfolio_delicia_react/src/assets/images/nature_fleur.jpg", alt: t('gallerie.image3'), title: t('gallerie.image3') },
+        { src: "/portfolio_delicia_react/src/assets/images/nature_fleur.jpg", alt: t('gallerie.image4'), title: t('gallerie.image4') }
     ];
 
     return (
