@@ -1,6 +1,6 @@
 /* Section "Quotes" */
 .quotes {
-    background-image: url("/src/assets/images/library.jpg");
+    background-image: url("/public/images/library.jpg");
     background-size: cover;
     position: relative;
     display: flex;

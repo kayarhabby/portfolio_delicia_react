@@ -12,7 +12,7 @@ const About = () => {
             <article className='about'>
                 <Title title={t('about.title')} />
                 <section className='about_container'>
-                    <img src="./src/assets/images/kimLeeM.jpg" alt="Kiml lee" />
+                    <img src="./images/kimLeeM.jpg" alt="Kiml lee" />
                     <article className='about_content'>
                         <p>{t('about.introduction')}</p>
                         <p>{t('about.goal')}</p>
