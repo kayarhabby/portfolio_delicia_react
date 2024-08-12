@@ -1,6 +1,6 @@
 /* Section "Header" */
 .header__container {
-    background-image: url("/public/images/laboratory.jpg");
+    background-image: url("/public/images/header_sante_public.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
