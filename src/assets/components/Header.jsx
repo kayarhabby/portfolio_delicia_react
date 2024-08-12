@@ -13,7 +13,6 @@ export default function Header() {
                     <p>{t('header.greeting')}</p>
                     <p>{t('header.description')}</p>
                 </article>
-                <button className="btn">{t('header.cta')}</button>
             </header>
         </div>
 
